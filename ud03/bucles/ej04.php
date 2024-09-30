@@ -15,17 +15,28 @@ Date: 27/09/2024-->
 <body>
     <h1>Paleta de Colores</h1>
     <table>
-        <?php
-            for ($x = 0; $x <= 255; $x += 64) {
-                for ($y = 0; $y <= 255; $y += 64) { 
-                    for ($z = 0; $z <= 255; $z += 64) { 
+
+    <?php
+            $counter = 0; 
+    
+            for ($x = 0; $x <= 255; $x += 32) {
+                for ($y = 0; $y <= 255; $y += 32) { 
+                    for ($z = 0; $z <= 255; $z += 32) {
                         $color = sprintf("#%02x%02x%02x", $x, $y, $z); 
-                        echo "<tr style='background-color: $color;'><td>$color</td></tr>"; 
+                        echo "<td style='background-color: $color;'>$color</td>";
+                        
+                        $counter++;
+                        if ($counter % 8 == 0) { 
+                            echo "</tr><tr>"; 
+                        }
                     }
                 }
             }
         ?>
+
     </table>
 </body>
 
 </html>
+
+
