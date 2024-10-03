@@ -6,7 +6,7 @@
  * 
  */
 $meses = array("Enero"=>31,
-                "Febrero"=>[28, 29],
+                "Febrero"=>array(28, 29),
                 "Marzo"=>31,
                 "Abril"=>30,
                 "Mayo"=>31,
@@ -22,7 +22,7 @@ $anno = date("Y");
 
 
 foreach ($meses as $key => $value) {
-    if ($mes == "Febrero") {
+    if ($mes == "Febrero"){
         if (($anno % 4 == 0 && $anno % 100 != 0) || ($anno % 400 == 0)) {
             echo "$mes tiene 29 días en el año $anno<br/>";
         } else {
