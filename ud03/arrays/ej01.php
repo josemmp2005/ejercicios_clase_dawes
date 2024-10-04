@@ -20,7 +20,7 @@ $aTablero = array(
 
 $notaAlumno = array(
     "UD01" => array(
-        "Bermúdez González, Raúl" => "",
+        "Bermúdez González, Raúl" => "10",
         "Cañas González, Álvaro" => "10",
         "Carmona Cicchetti, Miguel" => "10",
         "Carrasco Castellano, Alejandro" => "10",
@@ -49,7 +49,7 @@ $notaAlumno = array(
         "Villén Moyano, Luís Miguel" => "10"
     ),
     "UD02" => array(
-        "Bermúdez González, Raúl" => "",
+        "Bermúdez González, Raúl" => "10",
         "Cañas González, Álvaro" => "10",
         "Carmona Cicchetti, Miguel" => "10",
         "Carrasco Castellano, Alejandro" => "10",
@@ -138,5 +138,5 @@ $aInfo = array(
         ],
 
     ],
-;);
+);
 ?>
