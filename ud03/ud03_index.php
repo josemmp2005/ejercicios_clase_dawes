@@ -17,7 +17,7 @@
         table {
             width: 50%; 
             border-collapse: collapse;
-            margin: 20px 0; /* Espaciado alrededor de la tabla */
+            margin: 20px 0; 
         }
         th{        
             border: 1px solid #ccc;
