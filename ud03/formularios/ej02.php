@@ -3,7 +3,7 @@
  * Crear una aplicación que almacene información de países: nombre, capital y
  * bandera. Diseñar un formulario que permita seleccionar un país y nos muestre el
  * nombre de la capital y la bandera.
- * Autor: José María Mayén Pérez
+ * Autor: José María Mayén Pérez  
  */
 $a_paises = array(
     "España" => array("Madrid", "españa.png"),
