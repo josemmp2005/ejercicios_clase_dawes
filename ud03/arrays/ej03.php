@@ -12,7 +12,8 @@
     "Carmona Cicchetti, Miguel" => "image.png",
     "Carrasco Castellano, Alejandro" => "image.png",
     "Cherif Mouaki Almabouada, Mostafa" => "image.png",
-    "Coronado Ortega, Alejandro" => "image.png",
+    "Coronado Ortega, Alejandro" => "image.png"
+    ,
     "Delgado Morente, Juan Diego" => "image.png",
     "Escoto García, Marlon Jafet" => "image.png",
     "Fernández Ariza, Ángel" => "image.png",
