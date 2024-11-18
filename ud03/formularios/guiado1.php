@@ -1,55 +1,48 @@
 <?php
 /** 
- * autor: José María Mayén Pérez
+ * Autor: José María Mayén Pérez
  */
 
-$aGrupos = array("1ºDAw","2ºDAW","1ºASIR","2ºASIR");
+$aGrupos = array("1ºDAW", "2ºDAW", "1ºASIR", "2ºASIR");
 $lProcesaFormulario = false;
 
-if(isset($_POST["enviar"])) {
+if (isset($_POST["enviar"])) {
     $lProcesaFormulario = true;
-    if($lProcesaFormulario){
+    if ($lProcesaFormulario) {
         $nombre = $_POST['nombre'];
         $apellidos = $_POST['apellidos'];
         $email = $_POST['email'];
-        
-        echo"Nombre: $nombre";
-        echo"Apellidos: $apellidos";
-        echo"Email: $email";    
-    }else{
+        $grupo = $_POST['grupos'];
 
-
+        echo "Nombre: $nombre<br>";
+        echo "Apellidos: $apellidos<br>";
+        echo "Email: $email<br>";
+        echo "Grupo: $grupo<br>";
+    }
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Inscripción</title>
 </head>
 <body>
     <form action="procesa1.php" method="post">
-        <input type="text" name="nombre" id=""><br/>
-        <input type="text" name="apellidos" id=""><br/>
-        <input type="text" name="email" id=""><br/>
+        Nombre: <input type="text" name="nombre" id=""><br/>
+        Apellidos: <input type="text" name="apellidos" id=""><br/>
+        Email: <input type="text" name="email" id=""><br/>
         <select name="grupos" id="">
             <?php
-                /**foreach($aGrupos as $key => $value)
-                    echo '<option name="grupos" value="' .  $key  . '"> ' .  $value  . '</option> ';
-                */
+                foreach ($aGrupos as $curso) {
+                    echo '<option value="' . $curso . '">' . $curso . '</option>';
+                }
             ?>
-            
-
-           
         </select>
         <br/>
         <input type="submit" name="enviar">  
     </form>
-
 </body>
 </html>
-<?php
-}
-?>

@@ -30,8 +30,9 @@ if (!isset($_POST["enviar"])) {
                 move_uploaded_file($_FILES["file"]["tmp_name"], DIRUPLOAD . $filename);
             }
             echo "<br/>";
+            //Volver desde PHP
             echo "<a href=\"" . $_SERVER['HTTP_REFERER'] . "\">Volver</a>"; // No se recomienda.
-
+            //Volver desde JavaScript
             echo '<a href="javascript:history.back()">Volver</a>';
         }
     }
